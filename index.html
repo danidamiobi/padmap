@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+<title>padmap</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Comfortaa', cursive;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #ff6ec7;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffdbe9;
+}
+</style>
+<style>
+#myDIV {
+  text-align: center;
+  background-color: ;
+  display: none;
+}
+</style>
+
+</head>
+<h2>Welcome to padmap.</h2>
+<p id="up">Get a free pad close to you. Tap the pads on the <a href="#map">map</a> or type your city below to filter the list to your closest distributing center.</p>
+
+
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Kindly type your state/city.." Kindly type your state/city..">
+<p><button onclick="sortTable()">Alphabetical Order</button></p>
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%;">State/City</th>
+    <th style="width:20%; font color="pink">Organization</th>
+    <th style="width:60%;">Contact</th>
+  </tr>
+  <tr>
+    <td>Kano, Nigeria</td>
+    <td>Yes Concepts</td>
+    <td>Nassarawa LGA, Kano, Nigeria.
+    <br>
+    <a href="tel:07036750868">07036750868</a>
+    <br>
+    <a href="https://www.instagram.com/yes_concepts/"><i class='fab fa-instagram'></i></a>
+    <a href="https://www.facebook.com/yesconcepts/"><i class='fab fa-facebook'></i><a></td>
+  </tr>
+  <tr>
+    <td>Delta, Lagos, Nigeria</td>
+    <td>Halim Mary Initiative </td>
+    <td>Badagry, Lagos State | Delta State University, Delta State
+    <br>
+    <a href="tel:+2348125589458">+2348125589458</a>
+    </td>
+    <br>
+  </tr>
+  <tr>
+    <td>Oyo, Ibadan. Kogi, Nigeria</td>
+    <td>The Unique Variety World</td>
+    <td>
+    <a href="tel:+2348184423273">+2348184423273</a>
+    </td>
+    <br>
+  </tr>
+    <tr>
+    <td>Kampala, Lubaga - Uganda</td>
+    <td>Uganda Youth Skills Training Organisation</td>
+    <td>150 meters, Off Kasubi Tombs street behind St Andrews Kasubi Church of Uganda
+Kampala, Uganda.
+    <br>
+    <a href="https://www.instagram.com/yes_concepts/"><i class='fab fa-instagram'></i></a>
+    <a href="https://www.skillsforyouths.org/"><i class='fa fa-globe'></i><a></td>
+  </tr>
+  <tr>
+    <td>Lagos, Nigeria</td>
+    <td>Sanitary Aid Nigeria </td>
+    <td>
+    <a href="https://www.twitter.com/sanitaryaidng/"><i class='fab fa-twitter'></i></a>
+    <a href="https://www.instagram.com/sanitaryaidng/"><i class='fab fa-instagram'></i></a>
+    <a href="https://www.sanitaryaidng.com"><i class='fa fa-globe'></i><a></td>
+    </td>
+  </tr>
+  <tr>
+    <td>Limbe, Cameroon</td>
+    <td>Girls Excel</td>
+    <td>Manga Williams, Avenue, Limbe , SWR – Cameroon <br>
+    <a href="tel:+237671519727">+237671519727</a>, <a href="tel:+237675875246">+237675875246</a>
+    <br>
+    <a href="https://twitter.com/girlsexcel"><i class='fab fa-twitter'></i></a>
+    <a href="https://www.instagram.com/girls.excel/"><i class='fab fa-instagram'></i></a>
+    <a href="https://facebook.com/GirlsExcelCameroon/"><i class='fab fa-facebook'></i></a>
+    <a href="https://www.girlsexcel.org/"><i class='fa fa-globe'></i><a></td>
+    </td>
+    <br>
+  </tr>
+      <tr>
+    <td>Lagos, Nigeria</td>
+    <td>Padman Africa</td>
+    <td>55 Moleye Street, Yaba, Lagos, Nigeria <br>
+    <a href="tel:+2348063018069">+2348063018069</a>
+    <br>
+    <a href="https://twitter.com/africapadman"><i class='fab fa-twitter'></i></a>
+    <a href="http://www.instagram.com/padmanafrica"><i class='fab fa-instagram'></i></a>
+    <a href="https://www.facebook.com/padmanafrica/"><i class='fab fa-facebook'></i></a>
+    <a href="https://padmanafrica.org"><i class='fa fa-globe'></i><a></td>
+  </tr>
+  
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p id="map">
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1fY6XBwXOnwKQbefvQBZHryejvyxPyyF0" width="100%" height="480"></iframe>
+
+</p>
+<p><a href="#up">Go up</a></p>
+<br>
+<br>
+<br>
+</body>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+
+</script>
+
+<script>
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+ <style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightpink;
+  color: white;
+  text-align: right;
+}
+</style>
+
+
+<div class="footer">
+  <p>Beta | <a href="wa.me/2348130119057">Advice</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5ibByWyi3mCjOY3rsirfh6MjQJeK5Qhngw8WhXeJ7f2e1rQ/viewform?usp=sf_link">Add form</a> </p>
+</div> 
+<style>
+
+
+</html>
