@@ -1,7 +1,7 @@
 # padmap
 <b>About</b>
 <br/>
-A project to get all the free pad distribution centers, projects and organizations in the world together under one map.
+A project to get all the free pad distribution centers, projects and organizations in the world together in one page.
 <br/>
 <br/>
 <b>Why?</b>
